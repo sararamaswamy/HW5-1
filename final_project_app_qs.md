@@ -45,7 +45,7 @@ The see_all_actors route will show the actors in the database.
 There will be a route called movie_links that will show links to movies that are coming out; a user could click on these to see a preview of the movie in another view that calls on a dynamic route.
 
 * **How many different views will a user be able to see, NOT counting errors?**
-There will be six views. The first will allow a user to see a list of movies in the database, along wi th movie characteristics of each movie, like year, genre, and director. The second will how a list of directors in the database, along with the number of movies they have directed that are in the database. The third will show the actors in the database. The fourth will be a route called movie_links that will show links to movies that are coming out; a user could click on these to see a preview of the movie in another view that calls on a dynamic route.
+There will be six views. The first will allow a user to see a list of movies in the database, along with movie characteristics of each movie, like year, genre, and director. The second will how a list of directors in the database, along with the number of movies they have directed that are in the database. The third will show the actors in the database. The fourth will be a route called movie_links that will show links to movies that are coming out; a user could click on these to see a preview of the movie in another view that calls on a dynamic route.
 
 * **Basically, what will a user see on each page / at each route? Will it change depending on something else -- e.g. they see a form if they haven't submitted anything, but they see a list of things if they have?**
 
@@ -58,4 +58,8 @@ My application will send an email to a user with the information entered into th
 I may want to use user authentication, but I have clarifying questions about it to ask in class on Monday.
 
 * **What are your biggest concerns about the process of building this application?**
-Can my two dynamic links be the following: the one I am using to show recommended movies and information about them, just using "return redirect(url_for((function for see_all_movies))" at any place in the application? I want to clarify this in class. Besides this, I think mapping out data will help me keep everything organized and the big picture clear in my head. 
+Can my two dynamic links be the following: the one I am using to show recommended movies and information about them, just using "return redirect(url_for((function for see_all_movies))" at any place in the application? 
+
+Since my application is based around a user keeping a list of movies "to-watch," is there are way to implement a "remove from database" option to make it more realistic?
+
+I think mapping out data will help me keep everything organized and the big picture clear in my head. 

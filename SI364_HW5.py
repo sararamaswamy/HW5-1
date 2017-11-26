@@ -209,6 +209,8 @@ def index():
         if db.session.query(Tweet).filter_by(text=form.text.data, user_id= (get_or_create_user(db.session, form.username.data, form.email.data).id)).first():
             flash("You've already saved that tweet by this user!")
         get_or_create_tweet(db.session, form.text.data, form.username.data, form.email.data)
+        if app.config['ADMIN']:
+            send_email(app.config['ADMIN'], 'New Tweet',  'mail/new_tweet', tweet=form.text.data)
         return redirect(url_for('see_all_tweets'))
     return render_template('index.html', form=form,num_tweets=num_tweets)
 
