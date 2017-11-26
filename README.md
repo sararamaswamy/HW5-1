@@ -14,11 +14,11 @@
 
 Fork and clone this repository. Make edits to it as appropriate (see below), add, commit, and push them to your fork.
 
-* **For Part 1:** Submit to Canvas a link to your fork of this repository, with edits as directed in the code file. There are comments that say `TODO` throughout the files (fewer than in HW4!). You should fix up what those comments say to make the whole application run.
+* **For Part 1:** Submit to Canvas a link to your fork of this repository, with edits as directed in the code file. There are comments that say `TODO` throughout the files (fewer than in HW4!). You should fix up what those comments say to make the whole application run. done
 
-* **For Part 2:** This repository also includes a markdown file with questions. You should answer all of those questions in that file, and commit the answers to the repository. We'll see these within the link to your fork.
+* **For Part 2:** This repository also includes a markdown file with questions. You should answer all of those questions in that file, and commit the answers to the repository. We'll see these within the link to your fork. 
 
-* **For Part 2:** Also submit to canvas a file: An image (which you could use software to make, or draw on paper and scan/take a picture of it) demonstrating how data will flow through your application. See below for more instructions. Attach this to your Canvas submission.
+* **For Part 2:** Also submit to canvas a file: An image (which you could use software to make, or draw on paper and scan/take a picture of it) demonstrating how data will flow through your application. See below for more instructions. Attach this to your Canvas submission. 
 
 
 ## Instructions
@@ -29,7 +29,7 @@ Fork and clone this repository. Make edits to it as appropriate (see below), add
 
 * Designing a plan and diagram for the application you will write for your final project, which you'll also have time during section to workshop and work on.
 
-### Part 1 (400 points)
+### Part 1 (400 points) done
 
 Search for all occurrences of `TODO` in the comments in the `.py` files. Fix them as directed to make the application work.
 
