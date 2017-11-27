@@ -42,7 +42,7 @@ app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USERNAME'] = os.environ.get('MAIL_USERNAME') # TODO export to your environs -- may want a new account just for this. It's expecting gmail, not umich
 app.config['MAIL_PASSWORD'] = os.environ.get('MAIL_PASSWORD')
 app.config['MAIL_SUBJECT_PREFIX'] = '[Tweet App]' ## as2sumes you want any emails from this app to have the same start (comes from flickr or fitbit), sometimes they dont have this. might want a prefix
-app.config['MAIL_SENDER'] = 'solivia965@gmail.com' # TODO fill in email
+app.config['MAIL_SENDER'] = 'Admin <solivia965@gmail.com>' # TODO fill in email
 app.config['ADMIN'] = os.environ.get('ADMIN') ## send email to admin of this app if someone has added a new song. can export an email that is admin's email or not, up to you. 
 
 
@@ -210,8 +210,7 @@ def index():
             flash("You've already saved that tweet by this user!")
         else:
             get_or_create_tweet(db.session, form.text.data, form.username.data, form.email.data)
-            if app.config['ADMIN']:
-                send_email(form.email.data, 'New Tweet',  'new_tweet', tweet=form.text.data)
+            send_email(form.email.data, 'New Tweet',  'mail/new_tweet', tweet=form.text.data)
         return redirect(url_for('see_all_tweets'))
     return render_template('index.html', form=form,num_tweets=num_tweets)
 
